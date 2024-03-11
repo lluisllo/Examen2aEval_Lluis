@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: 1;
+}
+
+.container {
+  font-family: "Noto";
+  padding: 1%;
+}
+
+header {
+  display: flex;
+}
+
+/* Variables */
+@font-face {
+  font-family: "Noto";
+  src: url("../fonts/notosans-variablefont_wdthwght-webfont.woff2")
+      format("woff2"),
+    url("../fonts/notosans-variablefont_wdthwght-webfont.woff") format("woff");
+}
+
+:root {
+  /* Colores */
+  --Rosa: #e780c9;
+  --Rosa-hover: #e2a3cf;
+  --Rosa-active: #f063c7;
+
+  --Violeta: #ae8cd6;
+  --Violeta-hover: #d4afff;
+  --Violeta-active: #9569c8;
+
+  --Verde: #7de387;
+  --Cyan: #96d7da;
+  --Azul: #728de8;
+
+  --Negro: #000000;
+  --Negro-2: #434343;
+  --Negro-3: #333333;
+  --Negro-4: #242424;
+  --Negro-5: #161616;
+
+  --Blanco-2: #f9f9f9;
+  --Blanco-3: #e1e1e1;
+
+  --Gris: #aeaeae;
+  --Gris-3: #858585;
+}
