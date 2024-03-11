@@ -5,16 +5,155 @@
   list-style: 1;
 }
 
+html {
+  background: var(--Blanco-2);
+}
+
 .container {
-  font-family: "Noto";
-  padding: 1%;
-}
-
-header {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+  font-family: "Noto";
+  padding: 1% 0 4px 1%;
+  color: var(--Negro-4);
 }
 
-/* Variables */
+/* =========== HEADER =========== */
+.header {
+  display: flex;
+  align-items: flex-end;
+
+  & .logo {
+    width: 70%;
+  }
+
+  h1 {
+    margin-left: 1%;
+  }
+}
+
+/* =========== MAIN =========== */
+.main {
+  margin: 2% 0 0 3%;
+
+  & .duracion {
+    background: var(--Azul);
+    border-radius: 4px;
+    padding: 8px 20px;
+    width: 18%;
+  }
+
+  .precio {
+    background: var(--Verde);
+    border-radius: 4px;
+    padding: 8px 20px;
+    width: 10%;
+  }
+
+  .presencialidad {
+    background: var(--Cyan);
+    border-radius: 4px;
+    padding: 8px 20px;
+    width: 17%;
+  }
+
+  .btn-obtener-descuento {
+    background: var(--Rosa);
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-weight: 600;
+    border: none;
+    color: var(--Negro-4);
+    margin-top: 2%;
+  }
+
+  .introducir-descuento {
+    color: var(--Negro-4);
+    font-weight: 600;
+
+    & input {
+      width: 22%;
+      border-color: var(--Negro-3);
+      color: var(--Gris-3-3);
+      background: var(--Blanco-2);
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+  }
+
+  .btn-registrar {
+    background: var(--Violeta);
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-weight: 600;
+    border: none;
+    color: var(--Negro-4);
+    margin-top: 3%;
+  }
+}
+
+.main * {
+  font-size: 20px;
+  margin-bottom: 1%;
+}
+
+.tiempo-restante {
+  position: absolute;
+  background: var(--Violeta);
+  right: 3%;
+  top: 10%;
+  background: var(--Violeta);
+
+  border-radius: 4px;
+  padding: 8px 20px;
+  font-weight: 600;
+  color: var(--Negro-4);
+  font-size: 24px;
+  width: 15%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.img {
+  position: absolute;
+  right: 3%;
+  top: 30%;
+}
+
+/* Hover/Active */
+.btn-obtener-descuento:hover {
+  background: var(--Rosa-hover);
+  color: var(--Negro-3);
+  cursor: pointer;
+}
+.btn-registrar:hover {
+  background: var(--Violeta-hover);
+  color: var(--Negro-3);
+  cursor: pointer;
+}
+
+.btn-obtener-descuento:active {
+  background: var(--Rosa-active);
+  color: var(--Negro-5);
+}
+.btn-registrar:active {
+  background: var(--Violeta-active);
+  color: var(--Negro-5);
+}
+
+/* =========== FOOTER =========== */
+.footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.footer * {
+  cursor: pointer;
+}
+
+/* =========== Variables =========== */
 @font-face {
   font-family: "Noto";
   src: url("../fonts/notosans-variablefont_wdthwght-webfont.woff2")
